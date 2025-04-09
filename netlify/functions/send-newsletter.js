@@ -23,9 +23,7 @@ export default async (req) => {
 <div style="font-family: 'Segoe UI', 'Orbitron', sans-serif; color: #00ffee; background-color: #0a0a0a; padding: 40px 24px; border-radius: 12px; max-width: 600px; margin: auto; box-shadow: 0 0 25px rgba(0,255,255,0.1);">
   <h1 style="text-align: center; font-size: 28px; margin-bottom: 12px;">✨ Welcome to <span style="color: #ff0077;">AART.INK</span> ✨</h1>
   <p style="font-size: 16px; line-height: 1.6; color: #cccccc; text-align: center; margin-bottom: 28px;">
-    Thank you for signing up! You’ve just entered a digital cosmos of sound, visuals, and interaction.
-    <br><br>
-    This space is a living canvas where art, code, and audience collide — and now, you’re part of it.
+    Thank you for signing up!
   </p>
   <div style="text-align: center; margin-bottom: 24px;">
     <a href="https://aart.ink" style="text-decoration: none; padding: 14px 28px; background-color: #00ffee; color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,255,0.5); font-size: 14px;">
