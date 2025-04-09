@@ -4,11 +4,26 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async (req) => {
-  try {
-    const { email } = await req.json(); // ✅ FIX: req.json() parses correctly
+// CORS headers
+const corsHeaders = {
+  'Access-Control-Allow-Origin': 'https://aart.ink', // ✅ restrict to your domain
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type'
+};
 
-    const data = await resend.emails.send({
+export default async (req) => {
+  // ✅ Handle CORS preflight
+  if (req.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: corsHeaders
+    });
+  }
+
+  try {
+    const { email } = await req.json();
+
+    await resend.emails.send({
       from: 'Abtahi from AART.INK <no-reply@aart.ink>',
       to: email,
       subject: 'Welcome to the digital cosmos 🌌',
@@ -17,7 +32,10 @@ export default async (req) => {
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        ...corsHeaders,
+        'Content-Type': 'application/json'
+      }
     });
 
   } catch (error) {
@@ -28,7 +46,10 @@ export default async (req) => {
       error: error.message
     }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: {
+        ...corsHeaders,
+        'Content-Type': 'application/json'
+      }
     });
   }
 };
