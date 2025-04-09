@@ -34,7 +34,7 @@ export default async (req) => {
   <div style="font-size: 13px; text-align: center; color: #666;">
     You’re receiving this email because you signed up at <a href="https://aart.ink" style="color: #00ffee;">aart.ink</a>.
     <br>
-    If this wasn’t you, just ignore it — the machine spirits are watching 👁️‍🗨️
+    If this wasn’t you, just ignore it — Yoko probably signed you up by walking on the keyboard. 🐾
   </div>
 </div>`;
 
