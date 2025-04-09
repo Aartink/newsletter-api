@@ -21,7 +21,7 @@ export default async (req) => {
 
     const htmlContent = `
 <div style="font-family: 'Segoe UI', 'Orbitron', sans-serif; color: #00ffee; background-color: #0a0a0a; padding: 40px 24px; border-radius: 12px; max-width: 600px; margin: auto; box-shadow: 0 0 25px rgba(0,255,255,0.1);">
-  <h1 style="text-align: center; font-size: 28px; margin-bottom: 12px;">✨ Welcome to <span style="color: #ff0077;">AART.INK</span> ✨</h1>
+  <h1 style="text-align: center; font-size: 28px; margin-bottom: 12px; color: #ffcc00;">✨ Welcome to AART.INK ✨</h1>
   <p style="font-size: 16px; line-height: 1.6; color: #cccccc; text-align: center; margin-bottom: 28px;">
     Thank you for signing up!
   </p>
