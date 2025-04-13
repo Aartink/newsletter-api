@@ -25,14 +25,16 @@ export default async (req) => {
   <p style="font-size: 16px; line-height: 1.6; color: #cccccc; text-align: center; margin-bottom: 28px;">
     Thank you for signing up!
   </p>
-  <div style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
-    <a href="https://aart.ink" style="text-decoration: none; padding: 14px 28px; background-color: #00ffee; color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,255,0.5); font-size: 14px;">
-      ✨ Explore the Universe
-    </a>
-    <a href="mailto:aartinkofficial@gmail.com" style="text-decoration: none; padding: 14px 28px; background-color: #00ffee; color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,255,0.5); font-size: 14px;">
-      📩 Send a Message
-    </a>
-  </div>
+   <div style="text-align: center; margin-bottom: 24px;">
+  <a href="https://aart.ink" 
+     style="display: inline-block; margin: 4px; text-decoration: none; padding: 14px 28px; background-color: rgba(220, 194, 22, 0.9); color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(220, 194, 22, 0.5); font-size: 14px;">
+    ✨ Explore the Universe
+  </a>
+  <a href="mailto:aartinkofficial@gmail.com" 
+     style="display: inline-block; margin: 4px; text-decoration: none; padding: 14px 28px; background-color: rgba(220, 194, 22, 0.9); color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(220, 194, 22, 0.5); font-size: 14px;">
+    ✉️ Send a Message
+  </a>
+</div>
   <hr style="border: none; border-top: 1px dashed #333; margin: 32px 0;">
   <div style="font-size: 13px; text-align: center; color: #666;">
     You’re receiving this email because you signed up at <a href="https://aart.ink" style="color: #00ffee;">aart.ink</a>.
