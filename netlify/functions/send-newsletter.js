@@ -25,9 +25,12 @@ export default async (req) => {
   <p style="font-size: 16px; line-height: 1.6; color: #cccccc; text-align: center; margin-bottom: 28px;">
     Thank you for signing up!
   </p>
-  <div style="text-align: center; margin-bottom: 24px;">
+  <div style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;">
     <a href="https://aart.ink" style="text-decoration: none; padding: 14px 28px; background-color: #00ffee; color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,255,0.5); font-size: 14px;">
-      Explore the Universe
+      ✨ Explore the Universe
+    </a>
+    <a href="mailto:aartinkofficial@gmail.com" style="text-decoration: none; padding: 14px 28px; background-color: #00ffee; color: black; font-weight: bold; border-radius: 8px; box-shadow: 0 0 10px rgba(0,255,255,0.5); font-size: 14px;">
+      📩 Send a Message
     </a>
   </div>
   <hr style="border: none; border-top: 1px dashed #333; margin: 32px 0;">
@@ -41,7 +44,7 @@ export default async (req) => {
     await resend.emails.send({
       from: 'Abtahi from AART.INK <no-reply@aart.ink>',
       to: email,
-      subject: '✨ Welcome to AART.INK!',
+      subject: 'Abtahi Here — Welcome to AART.INK 🚀',
       html: htmlContent,
     });
 
